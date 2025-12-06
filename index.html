@@ -86,8 +86,6 @@
 	      zoom: 5.73,
       });
 
-      map.addControl(new mapboxgl.NavigationControl());
-
       // add markers to map
       for (const feature of geojson.features) {
         // create a HTML element for each feature
@@ -105,6 +103,8 @@
           )
           .addTo(map);
       }
+        // Add zoom and rotation controls to the map.
+        map.addControl(new mapboxgl.NavigationControl());
     </script>
   </body>
 </html>
