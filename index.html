@@ -116,7 +116,7 @@
         new mapboxgl.Marker(el)
           .setLngLat(feature.geometry.coordinates)
           .setPopup(
-            new mapboxgl.Popup({ offset: 25 }) // add popups
+            new mapboxgl.Popup({ offset: 20 }) // add popups
               .setHTML(
                 `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
               )
