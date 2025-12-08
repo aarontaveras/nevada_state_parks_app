@@ -82,10 +82,30 @@
       .navbar-toggler:focus {
         outline: none !important;
       }
+
+      .map-overlay {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        border-radius: 3px;
+      }
+
+      .legend-key {
+        display: inline-block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+      }
     </style>
   </head>
   <body>
     <div id="map"></div>
+    <div class="map-overlay" id="legend"></div>
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibmRmYWRtaW4iLCJhIjoiY2p4NWRrYW5rMDA4ZzRja2tuMHBxeWZweSJ9.yoDiDIC2DJbVI0oI8kqxIw';
