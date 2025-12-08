@@ -85,6 +85,8 @@
 
       .map-overlay {
         position: absolute;
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
         top: 25px;
         left: 25px;
         background: #fff;
@@ -93,20 +95,11 @@
         line-height: 18px;
         border-radius: 5px;
       }
-
-      .legend-key {
-        display: inline-block;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        margin-right: 5px;
-        font-family: "Roboto", sans-serif;
-      }
     </style>
   </head>
   <body>
     <div id="map"></div>
-    <div class="map-overlay" id="legend"><span><img style='vertical-align:middle;' src='https://raw.githubusercontent.com/aarontaveras/nevada_state_parks_app/refs/heads/main/nevada_state_park_files/Assets/Light-Blue-Pin-Icon.svg'>State Parks</span></div>
+    <div class="map-overlay"><img style='vertical-align:middle;' src='https://raw.githubusercontent.com/aarontaveras/nevada_state_parks_app/refs/heads/main/nevada_state_park_files/Assets/Light-Blue-Pin-Icon.svg'><span style="padding-left:10px;">State Parks</span></div>
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibmRmYWRtaW4iLCJhIjoiY2p4NWRrYW5rMDA4ZzRja2tuMHBxeWZweSJ9.yoDiDIC2DJbVI0oI8kqxIw';
