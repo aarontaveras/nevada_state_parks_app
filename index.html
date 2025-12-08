@@ -95,11 +95,21 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
       }
+
+      #legend-text {
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+
+      #legend-symbol {
+        vertical-align: middle;
+        width: 18px;
+      }
     </style>
   </head>
   <body>
     <div id="map"></div>
-    <div class="map-overlay"><img style='vertical-align:middle; width:18px' src='https://raw.githubusercontent.com/aarontaveras/nevada_state_parks_app/refs/heads/main/nevada_state_park_files/Assets/Light-Blue-Pin-Icon.svg'><span style="padding-left:10px; vertical-align:middle">State Parks</span></div>
+    <div class="map-overlay"><img src='https://raw.githubusercontent.com/aarontaveras/nevada_state_parks_app/refs/heads/main/nevada_state_park_files/Assets/Light-Blue-Pin-Icon.svg' id="legend-symbol"><span id="legend-text">State Parks</span></div>
 
     <script>
       mapboxgl.accessToken = 'pk.eyJ1IjoibmRmYWRtaW4iLCJhIjoiY2p4NWRrYW5rMDA4ZzRja2tuMHBxeWZweSJ9.yoDiDIC2DJbVI0oI8kqxIw';
